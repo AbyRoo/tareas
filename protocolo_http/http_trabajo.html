@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>Protocolo http</title>
+</head>
+
+<body>
+    <section>
+        <h2>¿QUE ES EL HTTP? </h2>
+        <main>
+            <p>El HTTP (Protocolo de Transferencia de Hipertexto) es el sistema que usan las páginas web para enviar y
+                recibir información en Internet. Gracias a él, los navegadores y los servidores pueden comunicarse y
+                mostrarte lo que ves en la web. Fue creado por grupos que trabajan en mejorar Internet. En pocas
+                palabras, HTTP es el idioma que usan las páginas web para hablar entre sí.</p>
+            <p>El HTTP no guarda información de lo que hiciste antes, o sea, cada vez que entras a una página es como
+                empezar desde cero. Pero muchas webs necesitan recordar cosas (como tu sesión o tus preferencias), y
+                para eso usan las cookies, que son pequeños archivos que el servidor guarda en tu computadora o cel.
+                Gracias a eso, las páginas pueden saber quién eres o qué hiciste antes, e incluso seguir tu actividad
+                por un tiempo.</p>
+        </main>
+    </section>
+
+    <section>
+        <h2>QUE SON LAS COOKIES 🍪</h2>
+        <main>
+            <p>Las cookies son pequeños archivos de texto que los sitios web envían a tu navegador y que se almacenan en
+                tu dispositivo, permitiéndoles "recordar" información sobre tu visita, como tus preferencias, inicio de
+                sesión o artículos en un carrito de compra</p>
+        </main>
+    </section>
+
+    <section>
+        <h3>Estructura y funcionamiento del protocolo http</h3>
+        <ul>
+            <li>
+
+                <h2> ¿Qué es la estructura de http?</h2>
+                <p>La estructura básica de un mensaje HTTP (tanto petición como respuesta) consiste en una línea inicial
+                    (de solicitud o de estado), encabezados y, opcionalmente, un cuerpo. La línea inicial define la
+                    acción a realizar o el resultado de la petición. Los encabezados proporcionan metadatos adicionales,
+                    mientras que el cuerpo (si existe) contiene los datos que se están enviando o recibiendo. </p>
+            </li>
+            <li>
+                <h2>Cómo funciona el protocolo HTTP</h2>
+                <p>HTTP es como el idioma que usan las computadoras para hablar entre sí cuando entras a una página web.
+                    Funciona con un sistema cliente-servidor, donde el cliente (tu navegador) le pide cosas al servidor
+                    (la computadora donde está guardada la página).</p>
+                <p>
+                    HTTP viaja dentro de otro sistema llamado TCP, que se encarga de que los datos lleguen bien.
+                    Normalmente se usa el puerto 80 para las páginas normales y el 443 cuando la conexión es segura (eso
+                    es el HTTPS, con candadito).
+                </p>
+                <p>
+                    Cuando entras a una página, tu navegador manda una solicitud HTTP (por ejemplo, usando los métodos
+                    GET, POST o HEAD) y el servidor responde con la información que pediste.
+                </p>
+                <p>
+                    Cuando ya te mandó todo, la conexión se cierra. Por eso se dice que HTTP es un protocolo sin
+                    memoria, porque no recuerda lo que pasó antes: cada vez que entras a una página, empieza todo desde
+                    cero.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>
+            Métodos de petición
+        </h2>
+        <p>Los métodos de petición son las “acciones” que el navegador pide al servidor.</p>
+        <ul>
+            <li>
+                <p><strong>GET</strong>: solicita información (por ejemplo, abrir una página).</p>
+                <p><strong>POST</strong>: envía datos al servidor (como al llenar un formulario).</p>
+                <p><strong>PUT</strong>: actualiza información.</p>
+                <p><strong>DELETE</strong>: borra datos.</p>
+                <p><strong>HEAD, OPTIONS, CONNECT, TRACE</strong>:se usan para tareas más técnicas.
+                    Estos métodos permiten que el navegador diga exactamente qué quiere hacer con la información.
+                </p>
+            </li>
+        </ul>
+        <p>
+            tabla de información con sus especificaciones
+        </p>
+        <img src="./img/rosa_tabla.png" width="1200px" alt="">
+    </section>
+
+    <section>
+        <h2> Códigos de respuesta</h2>
+        <p>Los códigos de respuesta indican el resultado de una petición HTTP.</p>
+        <ol>
+            <li><strong>200</strong>: todo salió bien.</li>
+            <li><strong>301 0 302</strong>: la página fue movida.</li>
+            <li><strong>404</strong>:página no encontrada.</li>
+            <li><strong>500</strong>:error del servidor.</li>
+            <p>Cada código tiene un número y un significado. Gracias a ellos, los navegadores y los desarrolladores
+                saben si algo funcionó, falló o cambió en la comunicación entre el cliente y el servidor.
+                tabla de información con sus especificaciones
+            </p>
+        </ol>
+        <img src="./img/azul_tabla.png" width="1200px" alt="">
+
+    </section>
+</body>
+
+</html>
