@@ -1,0 +1,36 @@
+
+<html>
+
+<head>
+   
+<body>
+    <h1>Protocolos de Comunicación: TCP y UDP</h1>
+
+    <h2>¿Qué es TCP?</h2>
+    <p>TCP (Transmission Control Protocol) es un protocolo de comunicación en redes que asegura que los datos enviados de un dispositivo a otro lleguen completos y en el orden correcto.</p>
+    <h3>Características principales:</h3>
+    <ul>
+        <li>Confiable: Verifica que cada paquete de datos llegue correctamente.</li>
+        <li>Orientado a conexión: Antes de enviar datos, establece una “conexión” entre los dispositivos.</li>
+        <li>Ideal para aplicaciones que necesitan precisión: Páginas web, correos electrónicos, transferencias de archivos.</li>
+    </ul>
+    <p>En resumidas palabras: TCP es como enviar cartas certificadas: todo debe llegar completo y en orden, aunque tarde un poco más que UDP.</p>
+
+    <h2>¿Qué es UDP?</h2>
+    <p>UDP (User Datagram Protocol) es un protocolo de comunicación en redes que permite enviar datos de un dispositivo a otro de manera rápida, pero sin garantizar que lleguen completos o en orden.</p>
+    <h3>Características principales:</h3>
+    <ul>
+        <li>Rápido y ligero: No revisa errores ni confirma recepción.</li>
+        <li>Ideal para tiempo real: Videos, música en streaming, juegos en línea o llamadas por Internet.</li>
+        <li>Sin conexión: No necesita “saludo” previo entre dispositivos (a diferencia de TCP).</li>
+    </ul>
+    <p>En resumidas palabras: UDP es como enviar mensajes rápidos sin preocuparte si algunos se pierden, útil cuando la velocidad es más importante que la perfección.</p>
+
+    <p>Protocolos de Red con sus respectivos puertos y su función </p>
+    <img src="tablarosaa.png"alt="deficiones " width="1200px">
+
+
+</body>
+
+
+</html>
