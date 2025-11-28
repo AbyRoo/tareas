@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Clave de la Electrónica</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        header { border-bottom: 2px solid #ccc; padding-bottom: 10px; margin-bottom: 20px; }
+        h1, h2, h3 { color: #333; }
+        .function-list { list-style: none; padding-left: 20px; }
+        .function-list li:before { content: "• "; color: #007BFF; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
+        .type-list { margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Componente Electrónico: El Resistor </h1>
+    </header>
+
+    <main>
+        <p>Un <strong>resistor</strong> (o <strong>resistencia</strong>) es un componente electrónico diseñado para introducir una <strong>resistencia eléctrica</strong> determinada entre dos puntos de un circuito. Su función principal es <strong>limitar el flujo de la corriente eléctrica</strong> y/o <strong>generar una caída de tensión</strong> de acuerdo con la <strong>Ley de Ohm</strong>:</p>
+        
+        <p style="text-align: center; font-size: 1.2em; font-weight: bold;">
+            V = I ⋅ R
+        </p>
+
+        <hr>
+
+        <section>
+            <h2> Función Principal</h2>
+            <p>La función más importante de un resistor es oponerse al paso de la corriente eléctrica. Puedes imaginarlo como una tubería estrecha en un sistema de agua que reduce la cantidad de agua que puede pasar.</p>
+            
+            <p>Esto se utiliza para:</p>
+            <ul class="function-list">
+                <li><strong>Limitar la corriente:</strong> Proteger otros componentes sensibles del circuito, como los LEDs, asegurando que no reciban demasiada corriente.</li>
+                <li><strong>Dividir la tensión (voltaje):</strong> Crear diferentes niveles de tensión en distintas partes de un circuito (divisores de voltaje).</li>
+                <li><strong>Generar calor:</strong> En aplicaciones como calentadores o planchas, se aprovecha el <strong>efecto Joule</strong>, donde la energía eléctrica se convierte en calor al pasar por la resistencia.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2> Unidades de Medida</h2>
+            <p>La propiedad fundamental del resistor, la resistencia, se mide en <strong>ohmios (Omega)</strong>.</p>
+            <p>El valor de la resistencia de un resistor fijo se indica generalmente mediante un <strong>código de bandas de colores</strong> impreso en su cuerpo.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2> Tipos Comunes de Resistores</h2>
+            <p>Los resistores se clasifican principalmente según si su valor puede ser modificado:</p>
+
+            <h3 style="color: green;">Resistores Fijos</h3>
+            <p>Tienen un valor de resistencia constante y son los más comunes en la mayoría de los circuitos electrónicos.</p>
+            <p class="type-list">
+                Ejemplos: De composición de carbón, de película de metal, de óxido metálico.
+            </p>
+
+            <h3 style="color: orange;">Resistores Variables</h3>
+            <p>Permiten ajustar su valor de resistencia dentro de un rango predefinido.</p>
+            <ul class="type-list">
+                <li><strong>Potenciómetros:</strong> Se ajustan mediante una perilla o eje y se usan, por ejemplo, para controlar el volumen en equipos de audio.</li>
+                <li><strong>Trimmer:</strong> Resistores ajustables que se configuran una vez, generalmente con un destornillador, para calibrar circuitos de precisión.</li>
+            </ul>
+            
+            <h3 style="color: blue;">Resistores No Lineales (Especializados)</h3>
+            <p>Su valor de resistencia cambia con alguna magnitud física externa (actúan como sensores).</p>
+            <ul class="type-list">
+                <li><strong>Termistores:</strong> Su resistencia varía con la <strong>temperatura</strong>.</li>
+                <li><strong>Fotorresistores (LDR):</strong> Su resistencia varía con la <strong>intensidad de la luz</strong> que incide sobre ellos.</li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p><small>Información básica de electrónica.</small></p>
+    </footer>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Resistores: Clasificación por Variabilidad</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        h1 { color: #4A90E2; }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px; color: #333; }
+        h3 { color: #555; margin-top: 15px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .note { font-style: italic; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tipos de Resistores por Clasificación</h1>
+    </header>
+
+    <main>
+        <p>Existen varios tipos de resistores que se pueden clasificar en tres categorías principales, basándose en si su valor de resistencia es <strong>fijo</strong>, <strong>variable</strong> o si depende de <strong>factores externos (no lineal)</strong>.</p>
+
+        <section id="fijos">
+            <h2>1. Resistores Fijos (Lineales Fijas)</h2>
+            <p>Son los más comunes. Tienen un valor de resistencia <strong>constante (nominal)</strong> que el fabricante establece y que no puede cambiarse. Se usan para establecer niveles fijos de corriente o voltaje.</p>
+            
+            <h3>Por Composición (Material):</h3>
+            <ul>
+                <li><strong>Película de Carbón/Metal:</strong> Son los resistores cilíndricos estándar con bandas de color. Los de película de metal ofrecen mayor precisión y estabilidad que los de película de carbón.</li>
+                <li><strong>Composición de Carbón:</strong> De los más antiguos y económicos, pero con menor precisión y estabilidad.</li>
+                <li><strong>Bobinados (de Alambre):</strong> Hechos con alambre enrollado. Son muy robustos y se utilizan en aplicaciones de <strong>alta potencia</strong> donde se necesita disipar mucho calor (efecto Joule).</li>
+            </ul>
+
+            <h3>Por Montaje:</h3>
+            <ul>
+                <li><strong>Orificio Pasante (Through-Hole):</strong> Los resistores cilíndricos que se insertan en agujeros de la placa de circuito.</li>
+                <li><strong>Montaje en Superficie (SMD/Chip Resistors):</strong> Pequeños, compactos y sin cables, diseñados para ser soldados directamente en la superficie de la placa. Son fundamentales en dispositivos electrónicos modernos.</li>
+            </ul>
+        </section>
+
+        <section id="variables">
+            <h2>2. Resistores Variables (Lineales Variables)</h2>
+            <p>Permiten <strong>ajustar manualmente</strong> su valor de resistencia dentro de un rango predefinido.</p>
+            <ul>
+                <li><strong>Potenciómetros:</strong> Se utilizan para controlar la tensión o la corriente en un circuito, como el control de volumen o el brillo de una pantalla. El ajuste se realiza moviendo un eje o perilla.</li>
+                <li><strong>Reóstatos:</strong> Son similares a los potenciómetros, pero están diseñados para manejar <strong>altas corrientes</strong> y se usan principalmente para control de potencia.</li>
+                <li><strong>Trimmers (Trimpots):</strong> Pequeños resistores ajustables con un tornillo, utilizados para calibrar circuitos de precisión. Se ajustan una sola vez durante el montaje.</li>
+            </ul>
+        </section>
+
+        <section id="no-lineales">
+            <h2>3. Resistores No Lineales (Especializados)</h2>
+            <p>Su valor de resistencia **varía automáticamente** en función de una magnitud física externa. Por lo general, se utilizan como <strong>sensores</strong>.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Dependencia</th>
+                        <th>Comportamiento</th>
+                        <th>Uso Común</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Termistor</strong></td>
+                        <td>Temperatura</td>
+                        <td>Su resistencia cambia drásticamente con la temperatura.</td>
+                        <td>Sensores de temperatura, termómetros, protección contra sobrecalentamiento.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fotorresistor (LDR)</strong></td>
+                        <td>Luz (Luminosidad)</td>
+                        <td>Su resistencia disminuye al aumentar la intensidad de la luz.</td>
+                        <td>Encendido/apagado automático de luces, alarmas sensibles a la luz.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Varistor (VDR)</strong></td>
+                        <td>Voltaje</td>
+                        <td>Su resistencia disminuye al aumentar el voltaje aplicado.</td>
+                        <td>Protección contra picos de voltaje (sobretensiones) en circuitos.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+    </main>
+
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes que Rigen a los Resistores</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        h1 { color: #8B0000; }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px; color: #333; }
+        .formula-display { 
+            text-align: center; 
+            font-size: 1.5em; 
+            margin: 20px 0; 
+            border: 1px dashed #4CAF50; 
+            padding: 10px;
+            background-color: #f9fff9;
+        }
+        .concept-key { font-weight: bold; color: #007BFF; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Leyes Fundamentales de los Resistores</h1>
+    </header>
+
+    <main>
+        <p>Los resistores se rigen fundamentalmente por la <strong>Ley de Ohm</strong> y, cuando se analizan en circuitos más complejos, por las <strong>Leyes de Kirchhoff</strong>.</p>
+
+        <section id="ley-ohm">
+            <h2>1. La Ley de Ohm</h2>
+            <p>La Ley de Ohm es la relación más crucial que define el comportamiento de un resistor ideal (llamado óhmico). Establece que la <strong>diferencia de potencial (Voltaje)</strong> aplicada a través de un resistor es directamente proporcional a la <strong>corriente eléctrica</strong> que fluye a través de él.</p>
+
+            <h3> Fórmula</h3>
+            <p>La relación se expresa con la siguiente ecuación:</p>
+            <div class="formula-display">
+                V = I ⋅ R
+            </div>
+
+            <ul>
+                <li>V es el <strong>Voltaje</strong> o Diferencia de Potencial (en Voltios, V).</li>
+                <li>I es la <strong>Intensidad de Corriente</strong> (en Amperios, A).</li>
+                <li>R es la <strong>Resistencia</strong> (en Ohmios)</li>
+            </ul>
+            
+            <p class="concept-key">Concepto Clave:</p>
+            <blockquote>
+                Un resistor con un valor fijo (R constante) actuará como un regulador: si se aumenta el voltaje (V), la corriente (I) debe aumentar proporcionalmente, y viceversa. Su principal propósito es <strong>limitar la corriente</strong> y causar una <strong>caída de voltaje</strong> conocida.
+            </blockquote>
+        </section>
+        
+        <hr>
+
+        <section id="leyes-kirchhoff">
+            <h2>2. Las Leyes de Kirchhoff</h2>
+            <p>Las Leyes de Kirchhoff se utilizan para analizar cómo se comportan los resistores (y otros componentes) cuando están conectados en circuitos más grandes y complejos (múltiples mallas y nodos).</p>
+
+            <h3> Ley de Corrientes de Kirchhoff (LCK) o Ley de Nodos</h3>
+            <p>Se basa en el principio de la <strong>conservación de la carga eléctrica</strong>.</p>
+            <p><strong>Enunciado:</strong> La suma algebraica de todas las corrientes que entran y salen de un <strong>nodo</strong> (unión de tres o más conductores) es igual a cero.</p>
+            <p><strong>Fórmula:</strong></p>
+            <div class="formula-display">
+                <span style="font-style: italic;">∑ I</span><sub>entrantes</sub> = <span style="font-style: italic;">∑ I</span><sub>salientes</sub>
+            </div>
+            <p>Esto significa que la corriente no se "pierde" ni se "crea" en ningún punto del circuito.</p>
+
+            <h3> Ley de Tensiones de Kirchhoff (LTK) o Ley de Mallas</h3>
+            <p>Se basa en el principio de la <strong>conservación de la energía</strong>.</p>
+            <p><strong>Enunciado:</strong> La suma algebraica de las diferencias de potencial (voltajes) alrededor de cualquier <strong>malla</strong> (trayectoria cerrada en un circuito) es igual a cero.</p>
+            <p><strong>Fórmula:</strong></p>
+            <div class="formula-display">
+                ∑ V = 0
+            </div>
+            <p>Esto significa que toda la energía suministrada por las fuentes de voltaje en un circuito cerrado debe ser consumida (disipada) por los resistores y otros elementos de carga.</p>
+        </section>
+
+        <hr>
+
+        <section id="ley-joule">
+            <h2>3. Ley de Joule</h2>
+            <p>Aunque no rige el comportamiento funcional del resistor, sí rige su efecto secundario más importante: la <strong>disipación de potencia en forma de calor</strong>.</p>
+            <p><strong>Enunciado:</strong> La potencia (P) disipada por un resistor es el producto de la caída de voltaje a través de él y la corriente que lo atraviesa.</p>
+            <p><strong>Fórmula:</strong> Combinando con la Ley de Ohm, se obtiene:</p>
+            <div class="formula-display">
+                P = V ⋅ I = I² ⋅ R = V² / R
+            </div>
+            <p>Esta ley es vital para seleccionar resistores con la <strong>potencia nominal</strong> adecuada (medida en Watts, W), ya que un resistor disipando demasiada potencia se quemará.</p>
+        </section>
+    </main>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistencia Equivalente: Serie y Paralelo</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        h1 { color: #5D3FD3; border-bottom: 2px solid #5D3FD3; padding-bottom: 5px; }
+        h2 { color: #333; margin-top: 25px; }
+        .caracteristicas { list-style: disc; margin-left: 20px; }
+        .formula-display { 
+            text-align: center; 
+            font-size: 1.4em; 
+            margin: 15px 0; 
+            padding: 10px;
+            border: 1px dashed #666;
+            background-color: #f0f0f0;
+        }
+        .ejemplo { 
+            margin-top: 10px; 
+            padding: 8px; 
+            background-color: #e6ffe6; 
+            border-left: 5px solid #4CAF50; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Resistencia Equivalente (Req)</h1>
+    </header>
+
+    <main>
+        <p>La <strong>resistencia equivalente (Req)</strong> es un valor único de resistencia que podría reemplazar a un conjunto de dos o más resistores en un circuito, sin cambiar la corriente total o el voltaje total que actúa sobre ese conjunto. Su cálculo depende de si los resistores están conectados <strong>en serie</strong> o <strong>en paralelo</strong>.</p>
+
+        <section id="serie">
+            <h2>1. Conexión en Serie (Suma Directa)</h2>
+            <p>En una conexión en serie, los resistores están conectados uno tras otro, formando un único camino para el flujo de la corriente.</p>
+
+            <h3> Características</h3>
+            <ul class="caracteristicas">
+                <li>La <strong>corriente (I)</strong> es la <strong>misma</strong> en cada resistor.</li>
+                <li>El <strong>voltaje (V)</strong> se <strong>divide</strong> entre los resistores.</li>
+                <li>La resistencia equivalente aumenta al añadir más resistores.</li>
+            </ul>
+
+            <h3> Fórmula</h3>
+            <p>La resistencia equivalente en serie (RS) es igual a la suma aritmética de las resistencias individuales:</p>
+            <div class="formula-display">
+                R<sub>S</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub> + ... + R<sub>N</sub>
+            </div>
+
+            <h3> Ejemplo</h3>
+            <div class="ejemplo">
+                <p>Si tienes R1 = 10\ \Omega y R2 = 20\ \Omega en serie:</p>
+                <p style="font-weight: bold;">R<sub>S</sub> = 10 &Omega; + 20 &Omega; = 30 &Omega;</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="paralelo">
+            <h2>2. Conexión en Paralelo (Suma de Recíprocos)</h2>
+            <p>En una conexión en paralelo, los resistores están conectados entre los mismos dos puntos (nodos), proporcionando múltiples caminos para que fluya la corriente.</p>
+
+            <h3> Características</h3>
+            <ul class="caracteristicas">
+                <li>El <strong>voltaje (V)</strong> es el mismo a través de cada resistor.</li>
+                <li>La corriente (I) se <strong>divide</strong> entre las diferentes ramas.</li>
+                <li>La resistencia equivalente disminuye al añadir más resistores. Siempre será <strong>menor</strong> que la resistencia más pequeña del conjunto.</li>
+            </ul>
+
+            <h3> Fórmula General</h3>
+            <p>El recíproco de la resistencia equivalente en paralelo (RP) es igual a la suma de los recíprocos de las resistencias individuales:</p>
+            <div class="formula-display">
+                1 / R<sub>P</sub> = 1 / R<sub>1</sub> + 1 / R<sub>2</sub> + 1 / R<sub>3</sub> + ... + 1 / R<sub>N</sub>
+            </div>
+
+            <h3> Fórmula para Dos Resistores</h3>
+            <p>Si solo tienes dos resistores (R_1 y R_2) en paralelo, puedes usar la fórmula simplificada (producto sobre la suma):</p>
+            <div class="formula-display">
+                R<sub>P</sub> = (R<sub>1</sub> ⋅ R<sub>2</sub>) / (R<sub>1</sub> + R<sub>2</sub>)
+            </div>
+        </section>
+    </main>
+</body>
+
+
+</html>
